@@ -45,7 +45,7 @@
                         <li><a href="">User</a>
                             <ul class="sub-menu mt-4">
                                 <li><a href="">Blog Home</a></li>
-                                <li><a href="<?= BASEURL ?>/login/logout">Logout</a></li>
+                                <li><a href="<?= BASEURL; ?>/login/logout">Logout</a></li>
                             </ul>
                         </li>
                     </ul>

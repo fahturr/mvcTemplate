@@ -1,9 +1,9 @@
 <!-- Banner Area Starts -->
-<section class="banner-area text-center">
+<section class="banner-area text-center" style="background-attachment: fixed">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h6><?= $_SESSION['user'] ?>the most interesting food in the world</h6>
+                <h6>the most interesting food in the world</h6>
                 <h1>Discover the <span class="prime-color">flavors</span><br>
                     <span class="style-change">of <span class="prime-color">food</span>fun</span></h1>
             </div>
@@ -23,10 +23,8 @@
             </div>
             <div class="col-md-6 align-self-center">
                 <div class="welcome-text mt-5 mt-md-0">
-                    <h3><span class="style-change">welcome</span> <br>to food fun</h3>
-                    <p class="pt-3">Created god gathered don't you yielding herb you had. And isn't, god was saw. Dominion. Great sixth for in unto was. Open can't tree am waters brought. Divide after there. Was.</p>
-                    <p>Created god gathered don't you yielding herb you had. And isn't, god was saw. Dominion. Great sixth for in unto was. Open can't tree waters brought. Divide after there. Was. Created god gathered don't you yielding herb you had. And isn't god.</p>
-                    <a href="#" class="template-btn mt-3">book a table</a>
+                    <h3><span class="style-change">welcome</span> <br>to MW Catering</h3>
+                    <p class="pt-3">MW Catering merupakan sebuah aplikasi berbasis web yang digunakan untuk memilih serta memesan makanan secara simple dan efisien. Rancangan konsep bisnis MW catering ini dibuat agar mempermudah para customer dalam mengadakan acara-acara besar</p>
                 </div>
             </div>
         </div>

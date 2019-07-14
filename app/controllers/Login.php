@@ -1,7 +1,14 @@
 <?php
 
 class Login extends Controller
-{
+{   
+    public function __construct()
+    {
+        if ($_SESSION['user']) {
+            header('Location: ' . BASEURL);
+        }
+    }
+
     public function index()
     {
         $this->view('login/index');    
@@ -17,5 +24,16 @@ class Login extends Controller
         } else {
             header('Location: ' . BASEURL . '/login');
         }
+    }
+
+    public function logout()
+    {
+        $_SESSION['user'] = null;
+        header('Location: ' . BASEURL . '/login');        
+    }
+
+    public function api()
+    {
+        $this->model('Api')->masuk();
     }
 }

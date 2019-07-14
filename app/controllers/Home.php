@@ -1,7 +1,14 @@
 <?php
 
 class Home extends Controller
-{ 
+{   
+    public function __construct()
+    {   
+        if(isset($_SESSION['user']) == null){
+            header('Location:' . BASEURL . '/login');   
+        }
+    }
+
     public function index()
     {
         $data['judul'] = 'Home';
