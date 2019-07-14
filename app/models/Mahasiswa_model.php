@@ -80,5 +80,3 @@ class Mahasiswa_model {
         return $this->db->rowCount();
     }
 }
-
-?>

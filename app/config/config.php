@@ -1,12 +1,10 @@
 <?php
 
-define('BASEURL', 'http://localhost/project-1/public');
+define('BASEURL', 'http://localhost/mvcTemplate/public');
 
 // DB
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'project-1');
-
-?>
+define('DB_NAME', 'ktr');

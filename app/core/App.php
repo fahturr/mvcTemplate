@@ -9,8 +9,12 @@ class App{
     {
         $url  = $this->parseURL();
         
-        if( file_exists('../app/controllers/' . $url[0] . '.php' ) ) {
-            $this->controller = $url[0];
+        if(!isset($_SESSION)) {
+            $this->controller = 'Login';
+        }
+
+        if( file_exists('../app/controllers/' . ucfirst($url[0]) . '.php' ) ) {
+            $this->controller = ucfirst($url[0]);
             unset($url[0]);
         }
 

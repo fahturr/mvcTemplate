@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Required Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Halaman <?= $data['judul']; ?></title>
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.css">
-</head>
-<body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Page Title -->
+    <title><?= $data['judul'] ?></title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="<?= BASEURL; ?>/images/logo/favicon.png" type="image/x-icon">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/animate-3.7.0.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/font-awesome-4.7.0.min.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/fonts/flat-icon/flaticon.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap-4.1.3.min.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/owl-carousel.min.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/nice-select.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/style.css">
+</head>
+
+<body>
+    <header class="header-area" style="position:fixed">
     <div class="container">
-        <a class="navbar-brand" href="<?= BASEURL; ?>">PHP MVC</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                
-                <a class="nav-item nav-link active" href="<?= BASEURL; ?>">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="<?= BASEURL; ?>/mahasiswa">Mahasiswa</a></div>
-                <a class="nav-item nav-link" href="<?= BASEURL; ?>/about">About</a></div>
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="logo-area">
+                    <a href="index.html"><img src="<?= BASEURL; ?>/images/logo/logo.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div class="custom-navbar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li class="active"><a href="<?= BASEURL; ?>">home</a></li>
+                        <li><a href="">menu</a></li>
+                        <li><a href="">User</a>
+                            <ul class="sub-menu mt-4">
+                                <li><a href="">Blog Home</a></li>
+                                <li><a href="<?= BASEURL ?>/login/logout">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</nav>
+    </header>
+    <!-- Header Area End -->
