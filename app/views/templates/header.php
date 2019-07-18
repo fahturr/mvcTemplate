@@ -25,33 +25,33 @@
 
 <body>
     <header class="header-area" style="position:fixed">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2">
-                <div class="logo-area">
-                    <a href="index.html"><img src="<?= BASEURL; ?>/images/logo/logo.png" alt="logo"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="logo-area">
+                        <a href="index.html"><img src="<?= BASEURL; ?>/images/logo/logo.png" alt="logo"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-10">
-                <div class="custom-navbar">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="main-menu">
-                    <ul>
-                        <li class="active"><a href="<?= BASEURL; ?>">home</a></li>
-                        <li><a href="">menu</a></li>
-                        <li><a href="">User</a>
-                            <ul class="sub-menu mt-4">
-                                <li><a href="">Blog Home</a></li>
-                                <li><a href="<?= BASEURL; ?>/login/logout">Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="col-lg-10">
+                    <div class="custom-navbar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="main-menu">
+                        <ul>
+                            <li class="active"><a href="<?= BASEURL; ?>">home</a></li>
+                            <li><a href="<?= BASEURL; ?>/menu">Menu</a></li>
+                            <li><a href="">Nama</a>
+                                <ul class="sub-menu mt-4">
+                                    <li><a href="">position</a></li>
+                                    <li><a href="<?= BASEURL; ?>/login/logout">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </header>
     <!-- Header Area End -->

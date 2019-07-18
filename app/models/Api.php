@@ -1,7 +1,5 @@
 <?php
 
-require_once '../app/config/vendor/autoload.php';
-
 class Api
 {
     private $authfile = AUTH;
@@ -40,7 +38,6 @@ class Api
                 $_SESSION['access_token'] = '';
                 die;
             }
-            header('Location: ' . BASEURL);
         }
     }
 
@@ -48,6 +45,6 @@ class Api
     {
         $_SESSION['access_token'] = '';
         $_SESSION['access_profile'] = '';
-        header('Location: ' . BASEURL . '/login');
+        header('Location: ' . BASEURL );
      }
 }

@@ -3,7 +3,7 @@
 class Login extends Controller
 {   
     public function __construct()
-    {
+    {   
         if ($_SESSION['user']) {
             header('Location: ' . BASEURL);
         }
@@ -20,6 +20,7 @@ class Login extends Controller
         
         if($dataus){
             $_SESSION['user'] = $dataus['username'];
+            $_SESSION['nama'] = $dataus['nama'];
             header('Location: ' . BASEURL);
         } else {
             header('Location: ' . BASEURL . '/login');
